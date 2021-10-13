@@ -1,0 +1,102 @@
+*{
+    border: 0;
+    margin: 0;
+    border: border-box;
+}
+
+html,
+body{
+    background-color: white; /*color de fondo*/
+    color:black;
+    text-rendering: optimizeLegibility;
+    font-size: 16px; /*tamaño total de la letra 16px = 100%*/
+    font-family: 'Work Sans','Arial', sans-serif; /*tipo de letra a usar*/
+}
+
+header{
+    background-image: url(../images/banner1.webp) ; /*imagen de fondo banner*/
+    height: 100vh; /*largo de toda la pantalla*/
+    background-size: cover; /*imagen cubrirá toda la pantalla*/
+    background-position: center; /*centramos la imagen*/
+    background-color: rgb(30, 30, 30); /*color de fondo*/
+    background-blend-mode: soft-light; /*propiedad de color*/
+    position: relative;
+}
+
+nav{
+    background-color: white;
+    height: 100px;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: black;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #ed07b7;;
+}
+
+.header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    font-size: 500%;
+    color:whitesmoke;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 200%;
+    color:whitesmoke;
+    font-weight: 400;
+}
+
+.header-box-text{
+    margin-bottom: 100px;
+}
+
+
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 200px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #ed07b7;
+    color: white;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: #BD0592;
+}
