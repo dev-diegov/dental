@@ -100,3 +100,14 @@ h2{
 .btn-full:active{
     background-color: #BD0592;
 }
+
+.laptop-image{
+    width: 80%;
+}
+
+.about-heading{
+    color: #000;
+    font-size: 250%;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
