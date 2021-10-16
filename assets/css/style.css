@@ -154,19 +154,21 @@ h2{
 }
 
 .laptop-image{
-    width: 90%;
+    width: 90%; /* largo del 90 % */
 }
 
 /**** SECCIÓN IMÁGENES ****/
 
 .images-section{
     text-align: center; /* centramos el contenido */
+    background-color: #f4f4f4; /* color de fondo */
 }
 
 .section-heading{
-    font-size: 250%;
-    color: #000;
-    margin-bottom: 20px;
+    font-size: 250%; /* tamaño letra */
+    color: #000; /* color letra */
+    margin-bottom: 20px; /* margen abajo 20 px */
+    margin-top: 150px; /* margen arriba 20 px */
 }
 
 .section-sub-heading{
@@ -174,6 +176,7 @@ h2{
     color: #555; /* color letra */
     font-weight: 300;
     margin-bottom: 30px; /* margen abajo 30 px */
+    line-height: 1.5; /* altura de línea */
 }
 
 .section-sub-heading:after{
@@ -186,13 +189,93 @@ h2{
 }
 
 .images{
-    margin-top: 10px;
+    margin-top: 10px; /* margen arriba de 10 px */
     list-style: none;
-    width: 100%;
+    width: 100%; /* largo del 100 % */
 }
 
 .images li{
+    display: block; /* tipo de caja bloque */
+    width: 25%; /* largo del 25 % */
+    float: left; /* ubicación a la izquierda*/
+}
+
+.dental-images{
+    background-color: #000; /* color de fondo */
+    overflow: hidden;
+}
+
+.dental-images img{
+    width: 100%; /* largo del 100% */
+    height: auto; /* altura automática */
+    opacity: .7; /* el brillo de la imagen disminuye */
+    transform: scale(1.15); /* pone la imagen sobre el texto */
+    transition: transform 0.5s, opacity 0.5s; /* efecto de transición */
+}
+
+.dental-images img:hover{
+    transform: scale(1); /* la imagen se achica */
+    opacity: 1; /* el brillo de la imagen aumenta*/
+}
+
+.images-para{
+    color: #fff; /* color letra */
+}
+
+.clearfix{
+    zoom:1;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear:both;
+    visibility: hidden;
+}
+
+/**** SECCIÓN SERVICIOS ****/
+
+.services-section{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.service-box{
+    padding:1% 0;
+}
+
+.big-icon{
+    font-size: 250%;
+    color: #6920b0;
     display: block;
-    width: 25%;
-    float: left;
+    margin-bottom: 30px;
+}
+
+.service-heading{
+    font-size: 150%;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.service-para{
+    color: #555;
+    font-size: 90%;
+    margin-bottom: 20px;
+}
+
+.service-link{
+    color: #ed07b7;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/**** SECCIÓN MARCAS ****/
+
+.marks-section{
+    text-align: center;
+}
+
+.mark-logo{
+    width: 65%; /* largo del 65 % */
+    height: auto;
 }
