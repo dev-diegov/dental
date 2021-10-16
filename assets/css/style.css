@@ -142,6 +142,7 @@ h2{
 
 .about-box{
     margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .about-box:first-child{
@@ -154,7 +155,7 @@ h2{
 }
 
 .laptop-image{
-    width: 90%; /* largo del 90 % */
+    width: 100%; /* largo del 100 % */
 }
 
 /**** SECCIÓN IMÁGENES ****/
@@ -242,6 +243,7 @@ h2{
 
 .service-box{
     padding:1% 0;
+    margin-bottom: 150px;
 }
 
 .big-icon{
@@ -278,4 +280,56 @@ h2{
 .mark-logo{
     width: 65%; /* largo del 65 % */
     height: auto;
+    margin-bottom: 150px;
+}
+
+/**** SECCIÓN TESTIMONIOS ****/
+
+.testimonials-section{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url(../images/bannertestimonio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial-heading{
+    font-size: 250%;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.testimonial-box{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+blockquote{
+    padding: 1%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    content: "\201C";
+    display: block;
+    font-size: 500%;
+    position: absolute;
+    left:-5px;
+    top: -5px;
+}
+
+cite{
+    display: block;
+    margin-top: 25px;
+    font-size: 90%;
+}
+
+cite img{
+    border-radius: 50%;
+    height: 20%;
+    vertical-align: middle;
+    margin-right: 10px;
 }
