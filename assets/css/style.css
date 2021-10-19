@@ -97,11 +97,12 @@ h2{
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 200px;
+    display: inline-block;
 }
 
 .btn-full:link,
 .btn-full:visited{
-    background-color: #ed07b7;
+    background-color: #ed07b7; /* color de fondo */
     color: white;
 }
 
@@ -118,15 +119,11 @@ h2{
 
 .btn-ghost:hover,
 .btn-ghost:active{
-    background-color: #ed07b7;
+    background-color: #ed07b7; /* color de fondo */
     color: white;
 }
 
 /**** SECCIÓN SOBRE NOSOTROS ****/
-
-.about-section{
-    padding-bottom: 20px;
-}
 
 .about-heading{
     color: #000;
@@ -262,7 +259,7 @@ h2{
 .service-para{
     color: #555;
     font-size: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .service-link{
@@ -332,4 +329,83 @@ cite img{
     height: 20%;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+/**** SECCIÓN PROMOCIONES ****/
+
+.packages-section{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.packages-heading{
+    color: #000;
+    font-size: 250%;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+
+.package-box{
+    background: #fff;
+    width: 90%;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 2px #efefefef; /* horizontal_shadow - vertical_shadow - blur - color*/
+    text-align: left;
+}
+
+.package-heading{
+    font-size:  150%; /* tamaño letra */
+    color: #555; /* color texto */
+    margin-bottom: 50px; /* margen hacia abajo de 50 px */
+    font-weight: 400;
+}
+
+.package-price{
+    color: #ed07b7; /* color texto */
+    font-size: 250%; /* tamaño letra */
+    margin-bottom: 10px; /* margen hacia abajo de 10 px */
+}
+
+.package-price span{
+    font-size: 30%; /* tamaño letra */
+    font-weight: 500;
+}
+
+.package-para{
+    color: #555; /* color texto */
+    font-size: 80%; /* tamaño letra */
+    margin-bottom: 10px; /* margen hacia abajo de 10 px */
+}
+
+.package-box ul {
+    list-style: none; /* quitamos los puntos de la lista */
+}
+
+.small-icon{
+    color: #ed07b7;
+    font-size: 120%;
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+}
+
+.package-box ul li{
+    color: #555;
+    padding: 5px 0;
+}
+
+.package-box div{
+    padding: 15px;
+    border-bottom: 1px solid #efefefef;
+}
+
+.package-box div:last-child{
+    border:0;
+    text-align: center;
+    padding-left: 0;
+}
+
+.package-box div:first-child{
+    background-color: #fefefe;
 }
