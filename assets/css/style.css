@@ -93,7 +93,8 @@ h2{
 /**** BOTONES ****/
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type="submit"]{
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 200px;
@@ -101,13 +102,15 @@ h2{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type="submit"]{
     background-color: #ed07b7; /* color de fondo */
     color: white;
 }
 
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type="submit"]:hover{
     background-color: #BD0592;
 }
 
@@ -407,5 +410,132 @@ cite img{
 }
 
 .package-box div:first-child{
-    background-color: #fefefe;
+    background-color: #fefefe; /* color de fondo */
+}
+
+/**** SECCIÓN CONTACTO ****/
+
+.contact-section{
+    text-align: center; /* centrar contenido */
+}
+
+.contact-heading{
+    color: #000; /* color texto */ 
+    margin-top:150px; /* margen arriba 150 px */
+    margin-bottom: 50px; /* margen abajo 150 px */
+}
+
+.contact-form{
+    text-align: left; /* poscionar a la izquierda el contenido */
+    width: 60%; /* largo del 60 % */
+    margin: 0 auto; /* posicionamos al medio*/
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    border:1px solid #CCC;
+    background-color: #fff;
+}
+
+input[type=submit]{
+    border: 0;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+textarea{
+    height: 100px;
+}
+
+.isclient{
+    margin-top: 10px;
+    margin-bottom: 10px; /* margen abajo 10 px */
+}
+
+*:focus{
+    outline:none;
+}
+
+/**** SECCIÓN FOOTER ****/
+
+footer{
+    background-color: #333; /* color de fondo */
+    padding: 50px; /* espacio relleno 50 px a todos los lados */
+    font-size: 80%; /* tamaño letra */
+    color: #888; /* color letra */
+}
+
+.footer-nav{
+    float: left;
+}
+
+.social-links{
+    float: right;
+}
+
+.footer-nav li{
+    list-style: none; /* quitar puntos a lista */
+    display: inline-block; /* elementos uno al lado del otro */
+    margin-right: 40px; /* espacio entre cada elemento */
+}
+
+.social-links li{
+    list-style: none; /* quitar puntos a lista */
+    display: inline-block; /* elementos uno al lado del otro */
+    margin-left: 40px; /* espacio entre cada elemento */
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    color: #888; /* color letra */
+    text-decoration: none; /* quitar delineado */
+    transition: color 0.2s; /* transición al pasar mouse por elementos */
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #fff; /* color letra */
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%; /* tamaño texto */
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-instagram{
+    transition:  color 0.2s;
+}
+
+.fa-facebook-f:hover{
+    color: #3b5998;
+}
+
+.fa-twitter:hover{
+    color: #00aced
+}
+
+.fa-google-plus-g:hover{
+    color: #dd4b39
+}
+
+.fa-instagram:hover{
+    color: #517fa4
+}
+
+footer p{
+    text-align: center; /* centramos contenido */
+    margin-top: 50px;
+    line-height: 1.5;
 }

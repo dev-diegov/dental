@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Clínica Dental</title>
+
+    <!-- incluímos fuentes de google -->  
+
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- incluímos fluid css -->
+    
     <link rel="stylesheet" href="assets/css/fluid.css">
     
     <!-- incluímos estilos css -->
     
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- incluímos media queries -->
+    
+    <link rel="stylesheet" href="assets/css/media-query.css">
+
     <!-- incluímos font awesome -->
 
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     
 </head>
+
 <body>
     <header>
         <nav>
@@ -250,6 +262,80 @@
             </div>
         </div>
     </section>
+
+    <section class="contact-section">
+        <div class="row">
+            <h2 class="contact-heading">Lorem ipsum dolor sit.</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="email" name="email" id="email" placeholder="Tu correo" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="isclient">¿Es cliente?</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="checkbox" name="isclient" id="isclient" checked>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="sms">Déjanos un mensaje</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <textarea name="sms" id="sms" placeholder="Tu mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        &nbsp;
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="submit" value="Enviar!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col span_1_of_2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus culpa?</p>
+        </div>
+    </footer>
 
 </body>
 </html>
