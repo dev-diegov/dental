@@ -15,7 +15,7 @@
     .packages-heading,
     .contact-heading{
         margin-top: 90px;
-    }
+    }   
 }
 
 /* De tablets pequeños a tablets grandes*/
@@ -67,6 +67,23 @@
     html,
     body{
         font-size:10px;
+    }
+
+    
+    nav{
+        height: 80px;
+    }
+
+    .main-nav{
+        margin-top: 40px;
+    }
+
+    .sticky-nav{
+        position:fixed;
+    }
+
+    .logo{
+        height: 80px;
     }
 
     .about-heading{

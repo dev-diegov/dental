@@ -94,6 +94,19 @@ h2{
     margin-bottom: 100px;
 }
 
+.sticky-nav{
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px #fefefe;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited{
+    padding: 95px 0;
+}
+
 /**** BOTONES ****/
 
 .btn:link,
