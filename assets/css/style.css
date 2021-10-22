@@ -22,8 +22,7 @@ body{
 
 header{
     background-image:-webkit-linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)), url(../images/banner1.webp) ;
-    background-image:-webkit-linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)), url(../images/banner1.webp) ;
-    background-image:linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)), url(../images/banner1.webp) ;
+    background-image:url(../images/banner1.webp) ;
     height: 100vh;
     background-size: cover; /*imagen cubrirá toda la pantalla*/
     background-position: center; /*centramos la imagen*/
@@ -33,8 +32,9 @@ header{
 }
 
 nav{
-    background-color: white;
     height: 100px;
+    background-color: #fff; /*color del header*/
+    backdrop-filter: blur(0.8rem); /*transparencia del color*/
 }
 
 .logo{
@@ -58,7 +58,7 @@ nav{
 .main-nav li a:link,
 .main-nav li a:visited{
     text-decoration: none;
-    color: black;
+    color: #000;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
@@ -96,6 +96,7 @@ h2{
 
 .sticky-nav{
     position: fixed;
+    z-index: 1;
     left:0;
     top: 0;
     width: 100%;
@@ -104,7 +105,7 @@ h2{
 
 .sticky-nav .main-nav li a:link,
 .sticky-nav .main-nav li a:visited{
-    padding: 95px 0;
+    color: #000;
 }
 
 /**** BOTONES ****/
@@ -568,4 +569,19 @@ footer p{
     text-align: center; /* centramos contenido */
     margin-top: 50px; /* margen arriba 50 px */
     line-height: 1.5; /* alto de línea */
+}
+
+/****  JQUERY ANIMATE ON SCROLL ****/
+
+.js--about-box {
+	opacity:0;
+	animation-duration:1s;
+}
+
+.js--about-box.animate__animated {
+	opacity:1;
+}
+
+.js--service-box {
+	animation-duration:1.5s;
 }

@@ -16,6 +16,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- incluímos fluid css -->
     
     <link rel="stylesheet" href="assets/css/fluid.css">
@@ -35,13 +37,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav class="sticky-nav">
             <img src="assets/images/logo.webp" alt="Logo" class="logo">
             <ul class="main-nav">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
         <div class="header-box">
@@ -53,15 +55,15 @@
         </div>
     </header>
 
-    <section class="about-section">
+    <section class="about-section js--about-section" id="about">
         <div class="row">
-            <div class="col span_1_of_3 about-box">
+            <div class="col span_1_of_3 about-box js--about-box">
                 <h2 class="about-heading">Aseguramos la calidad de tu sonrisa</h1>
                 <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ul elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                 <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ul elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                 <a href="#" class="btn btn-ghost">Leer mas</a>
             </div>
-            <div class="col span_1_of_2 about-box">
+            <div class="col span_1_of_2 about-box js--about-box">
                 <img src="assets/images/about-imagen.jpg" alt="TEST" class="laptop-image">
             </div>
         </div>
@@ -100,31 +102,31 @@
         </div>
     </ul>
 
-    <section class="services-section">
+    <section class="services-section js--services-section">
         <div class="row">
             <h2 class="section-heading">Nuestros Servicios</h2>
             <h3 class="section-sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur accusantium corporis minima? Reiciendis, id voluptate!</h3>
         </div>
         <div class="row">
-            <div class="col span_1_of_4 service-box">
+            <div class="col span_1_of_4 service-box js--service-box">
                 <i class="fas fa-tooth big-icon"></i>
                 <h4 class="service-heading">Extracción</h4>
                 <p class="service-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, aut.</p>
                 <a href="#" class="service-link btn btn-ghost">Agendar Cita...</a>
             </div>
-            <div class="col span_1_of_4 service-box">
+            <div class="col span_1_of_4 service-box js--service-box">
                 <i class="fas fa-grimace big-icon"></i>
                 <h4 class="service-heading">Limpieza</h4>
                 <p class="service-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, aut.</p>
                 <a href="#" class="service-link btn btn-ghost">Agendar Cita...</a>
             </div>
-            <div class="col span_1_of_4 service-box">
+            <div class="col span_1_of_4 service-box js--service-box">
                 <i class="fas fa-teeth big-icon"></i>
                 <h4 class="service-heading">Brackets</h4>
                 <p class="service-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, aut.</p>
                 <a href="#" class="service-link btn btn-ghost">Agendar Cita...</a>
             </div>
-            <div class="col span_1_of_4 service-box">
+            <div class="col span_1_of_4 service-box js--service-box">
                 <i class="fas fa-teeth-open big-icon"></i>
                 <h4 class="service-heading">Bruxismo</h4>
                 <p class="service-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, aut.</p>
@@ -180,13 +182,13 @@
         </div>
     </section>
 
-    <section class="packages-section">
+    <section class="packages-section js--packages-section">
         <div class="row">
             <h2 class="packages-heading">Revisa nuestras Promociones</h2>
             <h3 class="section-sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis, debitis neque natus consequatur ducimus repellat odio dolore corporis, veniam deleniti?</h3>
         </div>
         <div class="row">
-            <div class="col span_1_of_4">
+            <div class="col span_1_of_4 js--enterprise">
                 <div class="package-box">
                     <div>
                         <h4 class="package-heading">Extracción Muelas</h4>
@@ -206,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col span_1_of_4">
+            <div class="col span_1_of_4 js--enterprise">
                 <div class="package-box">
                     <div>
                         <h4 class="package-heading">Extracción Muelas</h4>
@@ -226,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col span_1_of_4">
+            <div class="col span_1_of_4 js--enterprise">
                 <div class="package-box">
                     <div>
                         <h4 class="package-heading">Extracción Muelas</h4>
@@ -246,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col span_1_of_4">
+            <div class="col span_1_of_4 js--enterprise">
                 <div class="package-box">
                     <div>
                         <h4 class="package-heading">Extracción Muelas</h4>
@@ -269,7 +271,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section js--scroll-to-contact" id="contact">
         <div class="row">
             <h2 class="contact-heading">Lorem ipsum dolor sit.</h2>
             <h3 class="section-sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis, debitis neque natus consequatur ducimus repellat odio dolore corporis, veniam deleniti?</h3>
@@ -355,6 +357,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
 <script src="assets/js/script.js"></script>
 
