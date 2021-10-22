@@ -21,8 +21,10 @@ body{
 /**** SECCIÓN HEADER ****/
 
 header{
-    background-image: url(../images/banner1.webp) ; /*imagen de fondo banner*/
-    height: 100vh; /*largo de toda la pantalla*/
+    background-image:-webkit-linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)), url(../images/banner1.webp) ;
+    background-image:-webkit-linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)), url(../images/banner1.webp) ;
+    background-image:linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)), url(../images/banner1.webp) ;
+    height: 100vh;
     background-size: cover; /*imagen cubrirá toda la pantalla*/
     background-position: center; /*centramos la imagen*/
     background-color: rgb(30, 30, 30); /*color de fondo*/
@@ -57,6 +59,7 @@ nav{
 .main-nav li a:visited{
     text-decoration: none;
     color: black;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -69,7 +72,8 @@ nav{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -213,12 +217,17 @@ input[type="submit"]:hover{
     width: 100%; /* largo del 100% */
     height: auto; /* altura automática */
     opacity: .7; /* el brillo de la imagen disminuye */
-    transform: scale(1.15); /* pone la imagen sobre el texto */
-    transition: transform 0.5s, opacity 0.5s; /* efecto de transición */
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); /* pone la imagen sobre el texto */
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; /* efecto de transición */
 }
 
 .dental-images img:hover{
-    transform: scale(1); /* la imagen se achica */
+    -webkit-transform: scale(1);
+            transform: scale(1); /* la imagen se achica */
     opacity: 1; /* el brillo de la imagen aumenta*/
 }
 
@@ -289,6 +298,7 @@ input[type="submit"]:hover{
 /**** SECCIÓN TESTIMONIOS ****/
 
 .testimonials-section{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url(../images/bannertestimonio.jpg);
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url(../images/bannertestimonio.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -503,6 +513,7 @@ footer{
 .social-links li a:visited{
     color: #888; /* color letra */
     text-decoration: none; /* quitar delineado */
+    -webkit-transition: color 0.2s;
     transition: color 0.2s; /* transición al pasar mouse por elementos */
 }
 
@@ -520,6 +531,7 @@ footer{
 .fa-twitter,
 .fa-google-plus-g,
 .fa-instagram{
+    -webkit-transition: color 0.2s;
     transition:  color 0.2s; /* transición */
 }
 
