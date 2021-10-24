@@ -7,11 +7,11 @@
 
 html,
 body{
-    background-color: white; /*color de fondo*/
+    background-color: white;
     color:black;
     text-rendering: optimizeLegibility;
-    font-size: 16px; /*tamaño total de la letra 16px = 100%*/
-    font-family: 'Work Sans','Arial', sans-serif; /*tipo de letra a usar*/
+    font-size: 16px; 
+    font-family: 'Work Sans','Arial', sans-serif;
 }
 
 .row{
@@ -25,17 +25,17 @@ header{
     background-image:-webkit-linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)), url(../images/banner1.webp) ;
     background-image:url(../images/banner1.webp) ;
     height: 100vh;
-    background-size: cover; /*imagen cubrirá toda la pantalla*/
-    background-position: center; /*centramos la imagen*/
-    background-color: rgb(30, 30, 30); /*color de fondo*/
-    background-blend-mode: soft-light; /*propiedad de color*/
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(30, 30, 30);
+    background-blend-mode: soft-light;
     position: relative;
 }
 
 nav{
     height: 100px;
-    background-color: #fff; /*color del header*/
-    backdrop-filter: blur(0.8rem); /*transparencia del color*/
+    background-color: #fff;
+    backdrop-filter: blur(0.8rem);
 }
 
 .logo{
@@ -123,7 +123,7 @@ input[type="submit"]{
 .btn-full:link,
 .btn-full:visited,
 input[type="submit"]{
-    background-color: #ed07b7; /* color de fondo */
+    background-color: #ed07b7; 
     color: white;
 }
 
@@ -141,7 +141,7 @@ input[type="submit"]:hover{
 
 .btn-ghost:hover,
 .btn-ghost:active{
-    background-color: #ed07b7; /* color de fondo */
+    background-color: #ed07b7;
     color: white;
 }
 
@@ -177,77 +177,77 @@ input[type="submit"]:hover{
 }
 
 .laptop-image{
-    width: 100%; /* largo del 100 % */
+    width: 100%;
 }
 
 /**** SECCIÓN IMÁGENES ****/
 
 .images-section{
-    text-align: center; /* centramos el contenido */
-    background-color: #f4f4f4; /* color de fondo */
+    text-align: center;
+    background-color: #f4f4f4;
 }
 
 .section-heading{
-    font-size: 250%; /* tamaño letra */
-    color: #000; /* color letra */
-    margin-bottom: 20px; /* margen abajo 20 px */
-    margin-top: 130px; /* margen arriba 20 px */
+    font-size: 250%;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 130px;
 }
 
 .section-sub-heading{
-    font-size: 150%; /* tamaño letra */
-    color: #555; /* color letra */
+    font-size: 150%;
+    color: #555;
     font-weight: 300;
-    margin-bottom: 30px; /* margen abajo 30 px */
-    line-height: 1.5; /* altura de línea */
+    margin-bottom: 30px;
+    line-height: 1.5;
 }
 
 .section-sub-heading:after{
-    display: block; /* tipo de caja bloque */
-    height: 2px; /* altura de 2 px */
-    width: 100px; /* largo de 100 px */
-    background-color: #ed07b7; /* color de fondo */
-    content: ""; /* no quiero que haya contenido */
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #ed07b7;
+    content: "";
     margin: 30px auto 0 auto; /* margen arriba 30 px - derecha auto - abajo 0 - izquierda auto */
 }
 
 .images{
-    margin-top: 10px; /* margen arriba de 10 px */
+    margin-top: 10px; 
     list-style: none;
-    width: 100%; /* largo del 100 % */
+    width: 100%;
 }
 
 .images li{
-    display: block; /* tipo de caja bloque */
-    width: 25%; /* largo del 25 % */
-    float: left; /* ubicación a la izquierda*/
+    display: block;
+    width: 25%;
+    float: left;
 }
 
 .dental-images{
-    background-color: #000; /* color de fondo */
+    background-color: #000; 
     overflow: hidden;
 }
 
 .dental-images img{
-    width: 100%; /* largo del 100% */
-    height: auto; /* altura automática */
-    opacity: .7; /* el brillo de la imagen disminuye */
+    width: 100%;
+    height: auto;
+    opacity: .7;
     -webkit-transform: scale(1.15);
-            transform: scale(1.15); /* pone la imagen sobre el texto */
+            transform: scale(1.15);
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; /* efecto de transición */
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .dental-images img:hover{
     -webkit-transform: scale(1);
-            transform: scale(1); /* la imagen se achica */
-    opacity: 1; /* el brillo de la imagen aumenta*/
+            transform: scale(1);
+    opacity: 1;
 }
 
 .images-para{
-    color: #fff; /* color letra */
+    color: #fff; 
 }
 
 .clearfix{
@@ -305,7 +305,7 @@ input[type="submit"]:hover{
 }
 
 .mark-logo{
-    width: 65%; /* largo del 65 % */
+    width: 65%;
     height: auto;
     margin-bottom: 20px;
 }
@@ -381,36 +381,36 @@ cite img{
     background: #fff;
     width: 90%;
     margin-bottom: 20px;
-    box-shadow: 0 3px 2px #efefefef; /* horizontal_shadow - vertical_shadow - blur - color*/
+    box-shadow: 0 3px 2px #efefefef; 
     text-align: left;
 }
 
 .package-heading{
-    font-size:  150%; /* tamaño letra */
-    color: #555; /* color texto */
-    margin-bottom: 50px; /* margen hacia abajo de 50 px */
+    font-size:  150%;
+    color: #555;
+    margin-bottom: 50px; 
     font-weight: 400;
 }
 
 .package-price{
-    color: #ed07b7; /* color texto */
-    font-size: 250%; /* tamaño letra */
-    margin-bottom: 10px; /* margen hacia abajo de 10 px */
+    color: #ed07b7;
+    font-size: 250%;
+    margin-bottom: 10px;
 }
 
 .package-price span{
-    font-size: 30%; /* tamaño letra */
+    font-size: 30%;
     font-weight: 500;
 }
 
 .package-para{
-    color: #555; /* color texto */
-    font-size: 80%; /* tamaño letra */
-    margin-bottom: 10px; /* margen hacia abajo de 10 px */
+    color: #555; 
+    font-size: 80%;
+    margin-bottom: 10px;
 }
 
 .package-box ul {
-    list-style: none; /* quitamos los puntos de la lista */
+    list-style: none;
 }
 
 .small-icon{
@@ -439,54 +439,54 @@ cite img{
 }
 
 .package-box div:first-child{
-    background-color: #fefefe; /* color de fondo */
+    background-color: #fefefe;
 }
 
 /**** SECCIÓN CONTACTO ****/
 
 .contact-section{
-    text-align: center; /* centrar contenido */
-    margin-bottom: 20px; /* margen abajo 20 px */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .contact-heading{
-    color: #000; /* color texto */ 
-    margin-top:100px; /* margen arriba 100 px */
-    margin-bottom: 50px; /* margen abajo 50 px */
+    color: #000;
+    margin-top:100px;
+    margin-bottom: 50px;
 }
 
 .contact-form{
-    text-align: left; /* poscionar a la izquierda el contenido */
-    width: 60%; /* largo del 60 % */
-    margin: 0 auto; /* posicionamos al medio*/
-    color: #555; /* color letra */
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    color: #555;
 }
 
 input[type="text"],
 input[type="email"],
 textarea{
-    width: 100%; /* largo del 100% */
-    padding: 5px; /* relleno a todos los lados */
-    border-radius: 8px; /* radio de borde */
-    border:1px solid #CCC; /* borde */
-    background-color: #fff; /* color de fondo */
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    border:1px solid #CCC;
+    background-color: #fff;
 }
 
 input[type=submit]{
-    border: 0; /* borde */
+    border: 0;
 }
 
 input[type=checkbox]{
-    margin: 10px 5px 10px 0; /* margen */
+    margin: 10px 5px 10px 0;
 }
 
 textarea{
-    height: 100px; /* altura del 100 px*/
+    height: 100px;
 }
 
 .isclient{
-    margin-top: 10px; /* margen arriba de 10 px */
-    margin-bottom: 10px; /* margen abajo 10 px */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 *:focus{
@@ -496,50 +496,50 @@ textarea{
 /**** SECCIÓN FOOTER ****/
 
 footer{
-    background-color: #333; /* color de fondo */
-    padding: 50px; /* espacio relleno 50 px a todos los lados */
-    font-size: 80%; /* tamaño letra */
-    color: #888; /* color letra */
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    color: #888;
 }
 
 .footer-nav{
-    float: left; /* posición a la izquierda */
+    float: left;
 }
 
 .social-links{
-    float: right; /* posición a la derecha */
+    float: right;
 }
 
 .footer-nav li{
-    list-style: none; /* quitar puntos a lista */
-    display: inline-block; /* elementos uno al lado del otro */
-    margin-right: 40px; /* espacio entre cada elemento */
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
 }
 
 .social-links li{
-    list-style: none; /* quitar puntos a lista */
-    display: inline-block; /* elementos uno al lado del otro */
-    margin-left: 40px; /* espacio entre cada elemento */
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
 }
 
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited{
-    color: #888; /* color letra */
-    text-decoration: none; /* quitar delineado */
+    color: #888;
+    text-decoration: none;
     -webkit-transition: color 0.2s;
-    transition: color 0.2s; /* transición al pasar mouse por elementos */
+    transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:active{
-    color: #fff; /* color letra */
+    color: #fff;
 }
 
 .social-links li a:link,
 .social-links li a:visited{
-    font-size: 160%; /* tamaño texto */
+    font-size: 160%;
 }
 
 .fa-facebook-f,
@@ -547,29 +547,29 @@ footer{
 .fa-google-plus-g,
 .fa-instagram{
     -webkit-transition: color 0.2s;
-    transition:  color 0.2s; /* transición */
+    transition:  color 0.2s;
 }
 
 .fa-facebook-f:hover{
-    color: #3b5998; /* color letra*/
+    color: #3b5998;
 }
 
 .fa-twitter:hover{
-    color: #00aced /* color letra*/
+    color: #00aced
 }
 
 .fa-google-plus-g:hover{
-    color: #dd4b39 /* color letra*/
+    color: #dd4b39 
 } 
 
 .fa-instagram:hover{
-    color: #517fa4 /* color letra*/
+    color: #517fa4 
 }
 
 footer p{
-    text-align: center; /* centramos contenido */
-    margin-top: 50px; /* margen arriba 50 px */
-    line-height: 1.5; /* alto de línea */
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1.5;
 }
 
 /****  JQUERY ANIMATE ON SCROLL ****/
